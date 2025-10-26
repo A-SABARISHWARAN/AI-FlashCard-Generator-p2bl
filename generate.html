@@ -1,0 +1,103 @@
+<!-- generate.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Flashcards - FLASHJ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>FLASHJ</h2>
+                    <span class="logo-subtitle">MindLoop</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="generate.html" class="nav-link active">Generate</a></li>
+                    <li class="nav-item"><a href="mcq.html" class="nav-link">MCQ</a></li>
+                    <li class="nav-item"><a href="stats.html" class="nav-link">Stats</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Generate Flashcards</h1>
+                    <p>Transform any text into interactive flashcards using AI-powered algorithms</p>
+                </div>
+
+                <!-- Input Section -->
+                <section class="input-section">
+                    <div class="glass" style="padding: 2rem; border-radius: 1rem; margin-bottom: 2rem;">
+                        <h3>Input Text</h3>
+                        <div class="form-group">
+                            <label class="form-label">Paste your text below:</label>
+                            <textarea id="textInput" class="form-textarea" placeholder="Paste your learning material here... (200-400 words works best)"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Or upload a file:</label>
+                            <div id="dropZone" class="file-upload">
+                                <div style="font-size: 3rem; margin-bottom: 1rem;">📁</div>
+                                <p>Drag & drop a .txt or .pdf file here</p>
+                                <p style="font-size: 0.875rem; color: var(--text-tertiary); margin-top: 0.5rem;">
+                                    or click to browse files
+                                </p>
+                                <input type="file" id="fileUpload" accept=".txt,.pdf" style="display: none;">
+                            </div>
+                        </div>
+
+                        <button id="generateBtn" class="btn btn-primary" style="width: 100%;">
+                            Generate Flashcards
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Statistics -->
+                <section class="stats-section">
+                    <div id="flashcardsStats">
+                        <!-- Stats will be populated by JavaScript -->
+                    </div>
+                </section>
+
+                <!-- Generated Flashcards -->
+                <section class="flashcards-section">
+                    <div class="section-header" style="display: flex; justify-content: between; align-items: center; margin-bottom: 2rem;">
+                        <h2>Generated Flashcards</h2>
+                        <div class="section-actions" style="display: flex; gap: 0.5rem;">
+                            <button id="studyModeBtn" class="btn btn-primary">Study Mode</button>
+                            <button id="exportJsonBtn" class="btn btn-outline">Export JSON</button>
+                            <button id="exportPdfBtn" class="btn btn-outline">Export PDF</button>
+                        </div>
+                    </div>
+
+                    <div id="flashcardsContainer">
+                        <!-- Flashcards will be populated by JavaScript -->
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2023 FLASHJ / MindLoop. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/flashcard-generator.js"></script>
+</body>
+</html>

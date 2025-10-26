@@ -1,0 +1,143 @@
+<!-- stats.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - FLASHJ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/charts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>FLASHJ</h2>
+                    <span class="logo-subtitle">MindLoop</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="generate.html" class="nav-link">Generate</a></li>
+                    <li class="nav-item"><a href="mcq.html" class="nav-link">MCQ</a></li>
+                    <li class="nav-item"><a href="stats.html" class="nav-link active">Stats</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Learning Analytics</h1>
+                    <p>Track your progress, identify weak areas, and optimize your study strategy</p>
+                </div>
+
+                <!-- Overview Stats -->
+                <section class="overview-section" style="margin-bottom: 3rem;">
+                    <div class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                        <div class="stat-card glass" style="padding: 1.5rem; border-radius: 0.75rem; text-align: center;">
+                            <div class="stat-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">📚</div>
+                            <div class="stat-number" id="totalCards" style="font-size: 2rem; font-weight: 700;">0</div>
+                            <div class="stat-label" style="color: var(--text-secondary);">Total Cards</div>
+                        </div>
+                        
+                        <div class="stat-card glass" style="padding: 1.5rem; border-radius: 0.75rem; text-align: center;">
+                            <div class="stat-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">❓</div>
+                            <div class="stat-number" id="totalMCQs" style="font-size: 2rem; font-weight: 700;">0</div>
+                            <div class="stat-label" style="color: var(--text-secondary);">MCQs Created</div>
+                        </div>
+                        
+                        <div class="stat-card glass" style="padding: 1.5rem; border-radius: 0.75rem; text-align: center;">
+                            <div class="stat-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
+                            <div class="stat-number" id="accuracy" style="font-size: 2rem; font-weight: 700;">0%</div>
+                            <div class="stat-label" style="color: var(--text-secondary);">Accuracy</div>
+                        </div>
+                        
+                        <div class="stat-card glass" style="padding: 1.5rem; border-radius: 0.75rem; text-align: center;">
+                            <div class="stat-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">🔥</div>
+                            <div class="stat-number" id="streak" style="font-size: 2rem; font-weight: 700;">0</div>
+                            <div class="stat-label" style="color: var(--text-secondary);">Day Streak</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Charts Section -->
+                <section class="charts-section" style="margin-bottom: 3rem;">
+                    <div class="charts-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <!-- Progress Chart -->
+                        <div class="chart-container glass" style="padding: 1.5rem; border-radius: 0.75rem;">
+                            <h3 style="margin-bottom: 1rem;">Study Progress</h3>
+                            <div class="chart" id="progressChart" style="height: 300px; position: relative;">
+                                <canvas id="progressCanvas"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- Leitner Box Distribution -->
+                        <div class="chart-container glass" style="padding: 1.5rem; border-radius: 0.75rem;">
+                            <h3 style="margin-bottom: 1rem;">Leitner Box Distribution</h3>
+                            <div class="chart" id="leitnerChart" style="height: 300px; position: relative;">
+                                <canvas id="leitnerCanvas"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- Accuracy Over Time -->
+                        <div class="chart-container glass" style="padding: 1.5rem; border-radius: 0.75rem; grid-column: 1 / -1;">
+                            <h3 style="margin-bottom: 1rem;">Accuracy Over Time</h3>
+                            <div class="chart" id="accuracyChart" style="height: 300px; position: relative;">
+                                <canvas id="accuracyCanvas"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Detailed Breakdown -->
+                <section class="breakdown-section" style="margin-bottom: 3rem;">
+                    <div class="breakdown-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <!-- Topics Performance -->
+                        <div class="breakdown-card glass" style="padding: 1.5rem; border-radius: 0.75rem;">
+                            <h3 style="margin-bottom: 1rem;">Topics Performance</h3>
+                            <div id="topicsList" class="topics-list">
+                                <!-- Topics will be populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <!-- Study Recommendations -->
+                        <div class="breakdown-card glass" style="padding: 1.5rem; border-radius: 0.75rem;">
+                            <h3 style="margin-bottom: 1rem;">Study Recommendations</h3>
+                            <div id="recommendationsList" class="recommendations-list">
+                                <!-- Recommendations will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recent Activity -->
+                <section class="activity-section">
+                    <div class="activity-card glass" style="padding: 1.5rem; border-radius: 0.75rem;">
+                        <h3 style="margin-bottom: 1rem;">Recent Study Activity</h3>
+                        <div id="activityTimeline" class="activity-timeline">
+                            <!-- Activity items will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2023 FLASHJ / MindLoop. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/stats.js"></script>
+</body>
+</html>

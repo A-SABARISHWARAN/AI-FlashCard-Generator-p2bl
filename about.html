@@ -1,0 +1,281 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - FLASHJ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>FLASHJ</h2>
+                    <span class="logo-subtitle">MindLoop</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="generate.html" class="nav-link">Generate</a></li>
+                    <li class="nav-item"><a href="mcq.html" class="nav-link">MCQ</a></li>
+                    <li class="nav-item"><a href="stats.html" class="nav-link">Stats</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section" style="padding: 3rem 0;">
+                <div class="container">
+                    <div class="text-center">
+                        <h1 class="hero-title">About FLASHJ / MindLoop</h1>
+                        <p class="hero-subtitle">Revolutionizing learning through AI-powered flashcard generation and spaced repetition</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mission Section -->
+            <section class="mission-section" style="padding: 4rem 0; background: var(--bg-secondary);">
+                <div class="container">
+                    <div class="mission-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                        <div>
+                            <h2 style="margin-bottom: 1.5rem;">Our Mission</h2>
+                            <p style="font-size: 1.125rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 2rem;">
+                                FLASHJ / MindLoop is dedicated to making learning more efficient, engaging, and accessible through cutting-edge AI technology. We believe that everyone deserves personalized learning tools that adapt to their unique needs and pace.
+                            </p>
+                            <div class="mission-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                                <div class="text-center">
+                                    <div class="stat-number" style="font-size: 2rem; font-weight: 700; color: var(--accent-primary);">1000+</div>
+                                    <div class="stat-label" style="color: var(--text-secondary);">Flashcards Generated</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="stat-number" style="font-size: 2rem; font-weight: 700; color: var(--accent-primary);">500+</div>
+                                    <div class="stat-label" style="color: var(--text-secondary);">MCQs Created</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="stat-number" style="font-size: 2rem; font-weight: 700; color: var(--accent-primary);">95%</div>
+                                    <div class="stat-label" style="color: var(--text-secondary);">User Satisfaction</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mission-visual">
+                            <div class="glass" style="padding: 2rem; border-radius: 1rem; text-align: center;">
+                                <div style="font-size: 4rem; margin-bottom: 1rem;">🚀</div>
+                                <h3>Innovative Learning</h3>
+                                <p>Combining AI with proven learning science methodologies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section class="team-section" style="padding: 5rem 0;">
+                <div class="container">
+                    <h2 class="section-title">Meet Our Team</h2>
+                    <p class="text-center" style="max-width: 600px; margin: 0 auto 3rem; color: var(--text-secondary);">
+                        A passionate team of educators, developers, and AI specialists working together to transform learning experiences.
+                    </p>
+                    
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="member-avatar" style="background: var(--gradient-primary);">JD</div>
+                            <h3>John Doe</h3>
+                            <p class="member-role" style="color: var(--accent-primary); font-weight: 600;">Lead Developer & Founder</p>
+                            <p class="member-bio" style="color: var(--text-secondary); margin-top: 1rem;">
+                                John leads our technical development with 10+ years of experience in educational technology and AI systems.
+                            </p>
+                            <div class="member-skills" style="display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap;">
+                                <span class="badge">AI/ML</span>
+                                <span class="badge">EdTech</span>
+                                <span class="badge">Leadership</span>
+                            </div>
+                        </div>
+
+                        <div class="team-member">
+                            <div class="member-avatar" style="background: var(--gradient-secondary);">AS</div>
+                            <h3>Alice Smith</h3>
+                            <p class="member-role" style="color: var(--accent-primary); font-weight: 600;">UI/UX Designer</p>
+                            <p class="member-bio" style="color: var(--text-secondary); margin-top: 1rem;">
+                                Alice creates intuitive and beautiful user experiences, specializing in educational interfaces and accessibility.
+                            </p>
+                            <div class="member-skills" style="display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap;">
+                                <span class="badge">UX Research</span>
+                                <span class="badge">Accessibility</span>
+                                <span class="badge">Visual Design</span>
+                            </div>
+                        </div>
+
+                        <div class="team-member">
+                            <div class="member-avatar" style="background: var(--gradient-accent);">BJ</div>
+                            <h3>Bob Johnson</h3>
+                            <p class="member-role" style="color: var(--accent-primary); font-weight: 600;">AI Specialist</p>
+                            <p class="member-bio" style="color: var(--text-secondary); margin-top: 1rem;">
+                                Bob develops our core AI algorithms for content analysis and personalized learning path generation.
+                            </p>
+                            <div class="member-skills" style="display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap;">
+                                <span class="badge">NLP</span>
+                                <span class="badge">Machine Learning</span>
+                                <span class="badge">Data Science</span>
+                            </div>
+                        </div>
+
+                        <div class="team-member">
+                            <div class="member-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">ES</div>
+                            <h3>Emma Wilson</h3>
+                            <p class="member-role" style="color: var(--accent-primary); font-weight: 600;">Learning Scientist</p>
+                            <p class="member-bio" style="color: var(--text-secondary); margin-top: 1rem;">
+                                Emma ensures our methods are grounded in cognitive science and effective learning principles.
+                            </p>
+                            <div class="member-skills" style="display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap;">
+                                <span class="badge">Cognitive Science</span>
+                                <span class="badge">Pedagogy</span>
+                                <span class="badge">Research</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Deep Dive -->
+            <section class="features-deep-section" style="padding: 5rem 0; background: var(--bg-secondary);">
+                <div class="container">
+                    <h2 class="section-title">How It Works</h2>
+                    
+                    <div class="process-steps">
+                        <div class="process-step" style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; margin-bottom: 3rem; padding: 2rem; background: var(--bg-primary); border-radius: 1rem;">
+                            <div class="step-number" style="width: 60px; height: 60px; border-radius: 50%; background: var(--gradient-primary); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem;">1</div>
+                            <div>
+                                <h3 style="margin-bottom: 1rem;">Content Analysis</h3>
+                                <p style="color: var(--text-secondary); line-height: 1.7;">
+                                    Our AI analyzes your text to identify key concepts, relationships, and important information using advanced natural language processing techniques.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="process-step" style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; margin-bottom: 3rem; padding: 2rem; background: var(--bg-primary); border-radius: 1rem;">
+                            <div class="step-number" style="width: 60px; height: 60px; border-radius: 50%; background: var(--gradient-secondary); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem;">2</div>
+                            <div>
+                                <h3 style="margin-bottom: 1rem;">Smart Generation</h3>
+                                <p style="color: var(--text-secondary); line-height: 1.7;">
+                                    Generate high-quality flashcards and MCQs automatically, with questions tailored to different learning objectives and difficulty levels.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="process-step" style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; margin-bottom: 3rem; padding: 2rem; background: var(--bg-primary); border-radius: 1rem;">
+                            <div class="step-number" style="width: 60px; height: 60px; border-radius: 50%; background: var(--gradient-accent); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem;">3</div>
+                            <div>
+                                <h3 style="margin-bottom: 1rem;">Spaced Repetition</h3>
+                                <p style="color: var(--text-secondary); line-height: 1.7;">
+                                    Our Leitner system implementation ensures you review material at optimal intervals for maximum long-term retention.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="process-step" style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; padding: 2rem; background: var(--bg-primary); border-radius: 1rem;">
+                            <div class="step-number" style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem;">4</div>
+                            <div>
+                                <h3 style="margin-bottom: 1rem;">Progress Tracking</h3>
+                                <p style="color: var(--text-secondary); line-height: 1.7;">
+                                    Monitor your learning journey with detailed analytics, insights, and personalized recommendations for improvement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technology Stack -->
+            <section class="tech-section" style="padding: 5rem 0;">
+                <div class="container">
+                    <h2 class="section-title">Technology Stack</h2>
+                    
+                    <div class="tech-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                        <div class="tech-item text-center">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
+                            <h4>Vanilla JavaScript</h4>
+                            <p style="color: var(--text-secondary);">Lightweight, fast, and framework-free</p>
+                        </div>
+                        
+                        <div class="tech-item text-center">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">🎨</div>
+                            <h4>Modern CSS</h4>
+                            <p style="color: var(--text-secondary);">Grid, Flexbox, and CSS Variables</p>
+                        </div>
+                        
+                        <div class="tech-item text-center">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">🤖</div>
+                            <h4>AI Algorithms</h4>
+                            <p style="color: var(--text-secondary);">NLP and machine learning for content analysis</p>
+                        </div>
+                        
+                        <div class="tech-item text-center">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">💾</div>
+                            <h4>Local Storage</h4>
+                            <p style="color: var(--text-secondary);">Data persistence without servers</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section" style="padding: 5rem 0; background: var(--gradient-primary); color: white;">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 style="margin-bottom: 1rem;">Ready to Transform Your Learning?</h2>
+                        <p style="margin-bottom: 2rem; opacity: 0.9;">Join thousands of learners who are already using FLASHJ to study smarter.</p>
+                        <div class="cta-actions" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                            <a href="generate.html" class="btn" style="background: white; color: var(--accent-primary);">Start Generating</a>
+                            <a href="index.html" class="btn" style="background: transparent; border: 2px solid white; color: white;">View Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content" style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; margin-bottom: 2rem;">
+                    <div class="footer-info">
+                        <h3 style="margin-bottom: 1rem;">FLASHJ / MindLoop</h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6;">
+                            Making learning more efficient and engaging through AI-powered tools and proven learning methodologies.
+                        </p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4 style="margin-bottom: 1rem;">Quick Links</h4>
+                        <ul style="list-style: none;">
+                            <li style="margin-bottom: 0.5rem;"><a href="index.html" style="color: var(--text-secondary); text-decoration: none;">Home</a></li>
+                            <li style="margin-bottom: 0.5rem;"><a href="generate.html" style="color: var(--text-secondary); text-decoration: none;">Generate</a></li>
+                            <li style="margin-bottom: 0.5rem;"><a href="mcq.html" style="color: var(--text-secondary); text-decoration: none;">MCQ</a></li>
+                            <li style="margin-bottom: 0.5rem;"><a href="stats.html" style="color: var(--text-secondary); text-decoration: none;">Stats</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <h4 style="margin-bottom: 1rem;">Contact</h4>
+                        <p style="color: var(--text-secondary);">Email: hello@flashj.app</p>
+                        <p style="color: var(--text-secondary);">GitHub: github.com/flashj-mindloop</p>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom" style="border-top: 1px solid var(--border-light); padding-top: 2rem; text-align: center;">
+                    <p>&copy; 2023 FLASHJ / MindLoop. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/utils.js"></script>
+</body>
+</html>

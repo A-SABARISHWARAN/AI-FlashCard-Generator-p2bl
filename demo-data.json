@@ -1,0 +1,52 @@
+{
+  "flashcards": [
+    {
+      "id": "1",
+      "topic": "Learning Systems",
+      "front": "What is the Leitner system?",
+      "back": "A spaced repetition technique that sorts flashcards into boxes by mastery; difficult cards are reviewed more frequently to improve retention.",
+      "notes": "Based on the spacing effect in cognitive psychology",
+      "tags": ["spaced-repetition", "memory"],
+      "difficulty": "medium",
+      "createdAt": "2023-11-01T10:00:00Z",
+      "lastReviewed": "2023-11-05T14:30:00Z",
+      "leitnerBox": 2
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "1",
+      "question": "What does the Leitner system help improve?",
+      "options": [
+        "Memory retention",
+        "Battery life", 
+        "File compression",
+        "Screen resolution"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The Leitner system is specifically designed to improve memory retention through spaced repetition.",
+      "difficulty": "easy",
+      "topic": "Learning Systems"
+    }
+  ],
+  "stats": {
+    "totalCards": 45,
+    "totalMCQs": 23,
+    "accuracy": 78,
+    "streak": 7,
+    "leitnerBoxes": {
+      "box1": 15,
+      "box2": 12, 
+      "box3": 8,
+      "box4": 6,
+      "box5": 4
+    },
+    "progressHistory": [
+      {"date": "2023-10-28", "cardsStudied": 12, "accuracy": 75},
+      {"date": "2023-10-29", "cardsStudied": 8, "accuracy": 62},
+      {"date": "2023-10-30", "cardsStudied": 15, "accuracy": 80},
+      {"date": "2023-10-31", "cardsStudied": 10, "accuracy": 70},
+      {"date": "2023-11-01", "cardsStudied": 20, "accuracy": 85}
+    ]
+  }
+}

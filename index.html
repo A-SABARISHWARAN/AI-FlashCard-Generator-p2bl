@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLASHJ: AI Flashcard Generator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>FLASHJ</h2>
+                    <span class="logo-subtitle">MindLoop</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="generate.html" class="nav-link">Generate</a></li>
+                    <li class="nav-item"><a href="mcq.html" class="nav-link">MCQ</a></li>
+                    <li class="nav-item"><a href="stats.html" class="nav-link">Stats</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">FLASHJ: AI Flashcard Generator</h1>
+                        <p class="hero-subtitle">Transform any text into interactive flashcards and quizzes using AI-powered algorithms</p>
+                        <div class="hero-actions">
+                            <a href="generate.html" class="btn btn-primary">Generate Flashcards</a>
+                            <a href="mcq.html" class="btn btn-secondary">Create MCQ</a>
+                            <button id="demoBtn" class="btn btn-outline">Try Demo</button>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="floating-card demo-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <h3>What is the Leitner system?</h3>
+                                </div>
+                                <div class="card-back">
+                                    <p>A spaced repetition technique that sorts flashcards into boxes by mastery; difficult cards are reviewed more frequently.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features-section">
+                <div class="container">
+                    <h2 class="section-title">Powerful Learning Features</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🎯</div>
+                            <h3>Personalized Learning</h3>
+                            <p>Adaptive algorithms tailor content to your learning pace and knowledge gaps.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📊</div>
+                            <h3>Leitner System</h3>
+                            <p>Spaced repetition system that optimizes review timing for maximum retention.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🧪</div>
+                            <h3>Test Mode</h3>
+                            <p>Practice with generated MCQs and track your progress over time.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📈</div>
+                            <h3>Progress Tracking</h3>
+                            <p>Visual analytics to monitor your learning journey and identify weak areas.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Demo Preview -->
+            <section class="demo-section">
+                <div class="container">
+                    <h2 class="section-title">Interactive Demo</h2>
+                    <div class="demo-container">
+                        <div class="demo-panel">
+                            <div class="demo-flashcards">
+                                <h3>Sample Flashcards</h3>
+                                <div class="flashcards-preview">
+                                    <!-- Demo flashcards will be injected here -->
+                                </div>
+                            </div>
+                            <div class="demo-mcq">
+                                <h3>Sample MCQ</h3>
+                                <div class="mcq-preview">
+                                    <!-- Demo MCQ will be injected here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section class="team-section">
+                <div class="container">
+                    <h2 class="section-title">Our Team</h2>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="member-avatar">SW</div>
+                            <h3>Sabarishwaran</h3>
+                            <p>Lead Developer and Learner</p>
+                        </div>
+                    </div>
+                    <div class="team-actions">
+                        <a href="#" class="btn btn-outline">Download App</a>
+                        <a href="#" class="btn btn-outline">View Presentation</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 FLASHJ / MindLoop. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
